@@ -1,0 +1,6 @@
+data <- read.csv("D:/MultiAnalysis/Project/house-prices-advanced-regression-techniques/Data.csv", header=FALSE)
+View(data)
+summary(data)
+head(data)
+str(data)
+dim(data)
