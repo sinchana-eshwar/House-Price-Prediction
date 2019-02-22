@@ -3,8 +3,8 @@
 # Overview
 The dataset includes 79 explanatory variables describing (almost) every aspect of residential homes in Ames and Iowa. The objective is to predict the final price of each home using predictive models
 
-Here's a brief description of the data fields
-•	SalePrice - the property's sale price in dollars. This is the target variable that you're trying to predict.
+Here's a brief description of the data fields  
+•	SalePrice - the property's sale price in dollars. This is the target variable that you're trying to predict.  
 •	MSSubClass: The building class
 •	MSZoning: The general zoning classification
 •	LotFrontage: Linear feet of street connected to property
