@@ -258,6 +258,7 @@ library(forecast)
 linear <- lm(SalePrice~., data=training, metric="RMSE", maximize=FALSE)
 summary(linear)
 accuracy(linear)
+plot(linear)
 ```
 
 
@@ -270,12 +271,12 @@ outlierTest(linear)
 ```{r}
 x <- c( BedroomAbvGr, LotArea, PoolArea, TotalBsmtSF, TotRmsAbvGrd)
 qqPlot(x , main="QQ Plot")
-
 ```
 
 ```{r}
 library(ggpubr)
 t.test(SalePrice, x, data = training)
 ```
+
 
 
