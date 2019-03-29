@@ -1,7 +1,7 @@
 ---
-title: "Week-6"
+title: "Week-7"
 author: "Viraj Sapre, Sinchana Mysore Eshwar, Kartik Nagarajan"
-date: "March 8, 2019"
+date: "March 29, 2019"
 output:
   word_document: default
   html_document: default
@@ -346,4 +346,34 @@ pca$rotation[,5]
 
 ```
 
+```{r}
+training_fca<-training[,num_var]
+training_fca<-training_fca[,-1]
+library(psych)
+fit.pc <- principal(training_fca, nfactors=8, rotate="varimax")
 
+```
+
+```{r}
+fit.pc
+round(fit.pc$values, 3)
+fit.pc$loadings
+
+
+```
+
+```{r}
+fa.parallel(training_fca) 
+
+
+
+
+```
+```{r}
+
+fa.diagram(fit.pc) # Visualize the relationship
+
+
+
+
+```
