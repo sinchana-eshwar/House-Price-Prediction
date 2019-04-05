@@ -345,12 +345,18 @@ pca$rotation[,4]
 pca$rotation[,5]
 
 ```
+```{r}
+#PC1 , PC2 explains more variance with Garage Area
+#PC3 explains more variance with Lot Area
+#PC4 explains more variance with Pool Area
+#PC5 explains more variance with Total Live Area
+```
 
 ```{r}
 training_fca<-training[,num_var]
 training_fca<-training_fca[,-1]
 library(psych)
-fit.pc <- principal(training_fca, nfactors=8, rotate="varimax")
+fit.pc <- principal(training_fca, nfactors=3, rotate="varimax")
 
 ```
 
